@@ -16,38 +16,38 @@ var browsers = {
       browserName: 'chrome',
       version: 'latest'
     },
-    sl_chrome_latest_win7: {
-      base: 'SauceLabs',
-      platform: 'Windows 7',
-      browserName: 'chrome',
-      version: 'latest'
-    },
-    sl_firefox_latest_linux: {
-      base: 'SauceLabs',
-      platform: 'Linux',
-      browserName: 'firefox',
-      version: 'latest'
-    },
-    sl_firefox_latest_osx11: {
-      base: 'SauceLabs',
-      platform: 'OS X 10.11',
-      browserName: 'firefox',
-      version: 'latest'
-    },
-    sl_firefox_latest_win7: {
-      base: 'SauceLabs',
-      platform: 'Windows 7',
-      browserName: 'firefox',
-      version: 'latest'
-    },
+    // sl_chrome_latest_win7: {
+    //   base: 'SauceLabs',
+    //   platform: 'Windows 7',
+    //   browserName: 'chrome',
+    //   version: 'latest'
+    // },
+    // sl_firefox_latest_linux: {
+    //   base: 'SauceLabs',
+    //   platform: 'Linux',
+    //   browserName: 'firefox',
+    //   version: 'latest'
+    // },
+    // sl_firefox_latest_osx11: {
+    //   base: 'SauceLabs',
+    //   platform: 'OS X 10.11',
+    //   browserName: 'firefox',
+    //   version: 'latest'
+    // },
+    // sl_firefox_latest_win7: {
+    //   base: 'SauceLabs',
+    //   platform: 'Windows 7',
+    //   browserName: 'firefox',
+    //   version: 'latest'
+    // },
     // Safari has serious issues with sauce labs
     // IE 10 fails because too many libraries use const
-    sl_ie_11_win7: {
-      base: 'SauceLabs',
-      platform: 'Windows 7',
-      browserName: 'internet explorer',
-      version: '11'
-    }
+    // sl_ie_11_win7: {
+    //   base: 'SauceLabs',
+    //   platform: 'Windows 7',
+    //   browserName: 'internet explorer',
+    //   version: '11'
+    // }
     // TODO add edge
   }
 };
