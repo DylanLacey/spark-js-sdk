@@ -21,7 +21,7 @@ module.exports = function(config) {
 
     browserDisconnectTimeout: 10000,
 
-    browserDisconnectTolerance: 3,
+    browserDisconnectTolerance: 0,
 
     browsers: process.env.SC_TUNNEL_IDENTIFIER ? Object.keys(launchers) : Object.keys(browsers.local),
 
@@ -58,7 +58,7 @@ module.exports = function(config) {
       `mocha`
     ],
 
-    hostname: `127.0.0.1`,
+    hostname: `karmalocal.com`,
 
     client: {
       mocha: {

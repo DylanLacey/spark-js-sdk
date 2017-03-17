@@ -33,18 +33,17 @@ module.exports = function(config) {
       ]
     },
 
-    browserNoActivityTimeout: 240000,
+    browserNoActivityTimeout: 30000,
 
     // Inspired by Angular's karma config as recommended by Sauce Labs
-    captureTimeout: 0,
+    captureTimeout: 30000,
 
     colors: !process.env.XUNIT,
 
     customLaunchers: launchers,
 
     files: [
-      'test/unit/spec/**/*.js',
-      'test/integration/spec/**/*.js'
+      'test/unit/spec/**/*.js'
     ],
 
     frameworks: [
@@ -52,7 +51,7 @@ module.exports = function(config) {
       'mocha'
     ],
 
-    hostname: '127.0.0.1',
+    hostname: 'karmalocal.com',
 
     client: {
       mocha: {
@@ -104,7 +103,9 @@ module.exports = function(config) {
       build: process.env.BUILD_NUMBER || ('local-' + process.env.USER + '-' + Date.now()),
       startConnect: false,
       testName: pkg.name + ' (karma)',
-      tunnelIdentifier: process.env.SC_TUNNEL_IDENTIFIER
+      tunnelIdentifier: process.env.SC_TUNNEL_IDENTIFIER,
+      recordVideo: true,
+      recordScreenshots: true
     };
     cfg.reporters.push('saucelabs');
   }
